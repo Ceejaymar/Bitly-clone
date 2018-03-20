@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {bitlysdk} from '../config/config';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { bitlysdk } from '../config/config';
 import Navbar from './Navbar';
 import BitLink from './BitLink';
 import '../css/App.css';
@@ -47,6 +48,10 @@ class App extends Component {
     e.currentTarget.reset();
   }
 
+  copied = () => {
+    alert('Link has been copied!')
+  }
+
   render() {
     return (
       <div className="App">
@@ -61,7 +66,15 @@ class App extends Component {
         </form>
         <div className="list-cont">
           <ul className="bit-list">
-            {Object.keys(this.state.bitList).map(link => <BitLink key={link} details={this.state.bitList[link]} />)}
+            {Object.keys(this.state.bitList).map(link => {
+              return <CopyToClipboard
+                      text={this.state.bitList[link].shorten.url}
+                      key={link}>
+                        <div className="bit-link-cont" onClick={this.copied}>
+                          <BitLink details={this.state.bitList[link]} /> 
+                        </div>
+                      </CopyToClipboard>
+                    })}
           </ul>
         </div>
       </div>
