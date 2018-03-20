@@ -1,0 +1,324 @@
+/* -----Base---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* -----/Base---- */
+
+
+
+/* -----Nav---- */
+
+nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 70px;
+  margin-left: 70px;
+}
+
+.nav-list {
+  height: 70px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.nav-links {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .5px;
+  border-top: 4px solid transparent;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links:hover {
+  border-top: 4px solid white;
+}
+
+/* -----/Nav---- */
+
+
+
+/* -----App---- */
+
+.App {
+  height: 75vh;
+  background-image: url(../images/background-image.png);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.header-main {
+  font-size:  3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-sub {
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+form {
+  width: 60%;
+}
+
+form input {
+  width: 83%;
+  height: 65px;
+  border: 1.4px solid transparent;
+  border-radius: 3px 0 0 3px;
+  font-size: 1.1em;
+  font-weight: 300;
+  padding-left: 25px;
+  outline: none;
+}
+
+form input:focus {
+  border: 1.4px solid #ee6123;
+}
+
+form input::placeholder {
+  color: #9b9b9b;
+}
+
+form button {
+  background-color: #ee6123;
+  width: 17%;
+  height: 65px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: white;
+  vertical-align: top;
+  margin-left: -2px;
+  outline: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f06c33;
+}
+
+.list-cont {
+  position: relative;
+  width:100%;
+}
+
+.bit-list {
+  width: 60%;
+  background-color: #fff;
+  border-radius: 3px;
+  font-weight: 300;
+  padding: 0 25px 0 25px;
+  margin-bottom: 40px;
+  position: absolute;
+  top: -120px;
+  left: 20%;
+  box-shadow: 1px 1px 3px 0px rgba(68, 68, 68, 0.404);
+}
+
+/* -----/App---- */
+
+
+
+/* -----BitLink---- */
+
+.bit-link {
+  border-bottom: 1px solid #9b9b9b;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.bit-link:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.title-lurl {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.title {
+  font-size: 1.1em;
+  color: #444;
+  text-decoration: none;
+}
+
+.long-url,
+.global-click {
+  color: #9b9b9b;
+}
+
+.long-url {
+  text-decoration: none;
+}
+
+.title:hover,
+.long-url:hover {
+  text-decoration: underline;
+}
+
+.url-click {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.short-url {
+  color: #ee6123;
+}
+
+.short-url span {
+  font-weight: 400;
+}
+
+.long-url,
+.short-url,
+.global-click {
+  font-size: .9em;
+}
+
+.global-div {
+  display: flex;
+  align-items: center;
+}
+
+.global-click {
+  height: 20px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 7px;
+}
+
+.global-click:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.global-div img {
+  width: 30px; 
+}
+
+/* -----/BitLink---- */
+
+
+
+/* -----NotFound---- */
+
+.not-found {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #ee6123;
+  color: #fff;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.not-found div {
+  text-align: center;
+}
+
+.not-found a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* -----/NotFound---- */
+
+
+
+/* -----Media Queries---- */
+
+@media (max-width: 768px) {
+  .nav-list {
+    width: 100%;
+    padding: 0 10px;
+   }
+}
+
+@media (max-width: 1000px) {
+  .nav-list {
+    width: 75%;
+   }
+
+   .header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+
+ .nav-list {
+  width: 100%;
+  padding: 0 10px;
+ }
+
+  nav img {
+    margin-left: 0;
+  }
+
+  .header {
+    padding: 0 30px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form button {
+    font-size: .65em;
+  }
+
+  .bit-list {
+    width: 90%;
+    top: -50px;
+    left: 5%;
+  }
+}
+
+/* -----Media Queries---- */
