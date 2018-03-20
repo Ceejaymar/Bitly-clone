@@ -151,14 +151,21 @@ form button:hover {
   box-shadow: 1px 1px 3px 0px rgba(68, 68, 68, 0.404);
 }
 
+.bit-link-cont {
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.bit-link-cont:last-child {
+  border-bottom: 1px solid transparent;
+}
 /* -----/App---- */
 
 
 
 /* -----BitLink---- */
 
+
 .bit-link {
-  border-bottom: 1px solid #9b9b9b;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -166,9 +173,6 @@ form button:hover {
   padding-top: 25px;
 }
 
-.bit-link:last-child {
-  border-bottom: 1px solid transparent;
-}
 
 .title-lurl {
   display: flex;
@@ -321,4 +325,4 @@ form button:hover {
   }
 }
 
-/* -----Media Queries---- */
+/* -----/Media Queries---- */
