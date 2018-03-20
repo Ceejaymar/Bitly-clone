@@ -6,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Set up configuration
-Open the project folder traverse through the 'src' folder then 'config' folder to find the `demo-secret-keys.js` file. 
+Open the project folder traverse to the `config` folder through the 'src' folder.
 
-Rename the file to `secret-keys.js`.
+Rename the `demo-secret-keys.js` file to `secret-keys.js`.
 
 Open the `secret-keys.js` file and edit the variables for login and apiKey with your information.
 
