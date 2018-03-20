@@ -12,6 +12,8 @@ Rename the `demo-secret-keys.js` file to `secret-keys.js`.
 
 Open the `secret-keys.js` file and edit the variables for login and apiKey with your information.
 
+Save and close file.
+
 ## Start development mode
 After you complete the configuration setup, navigate to the project in your terminal.
 
