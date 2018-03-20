@@ -53,6 +53,8 @@ class App extends Component {
   }
 
   render() {
+    const { bitList } = this.state;
+    
     return (
       <div className="App">
         <Navbar />
@@ -66,15 +68,15 @@ class App extends Component {
         </form>
         <div className="list-cont">
           <ul className="bit-list">
-            {Object.keys(this.state.bitList).map(link => {
-              return <CopyToClipboard
-                      text={this.state.bitList[link].shorten.url}
-                      key={link}>
-                        <div className="bit-link-cont" onClick={this.copied}>
-                          <BitLink details={this.state.bitList[link]} /> 
-                        </div>
-                      </CopyToClipboard>
-                    })}
+            {Object.keys(bitList).map(link => {
+              return (
+                <CopyToClipboard text={bitList[link].shorten.url} key={link}>
+                  <div className="bit-link-cont" onClick={this.copied}>
+                    <BitLink details={this.state.bitList[link]} /> 
+                  </div>
+                </CopyToClipboard>
+              )}
+            )}
           </ul>
         </div>
       </div>
