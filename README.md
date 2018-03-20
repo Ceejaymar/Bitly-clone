@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![alt text](https://i.imgur.com/bVbujCA.png "Carlos's Bitly")
 
-<!-- ## [Carlos's live Bitly website](http://litclub.herokuapp.com/ "Carlos Bitly website") -->
+<!-- ## [Carlos's live Bitly website](http://.herokuapp.com/ "Carlos Bitly website") -->
 
 
 ## Set up configuration
