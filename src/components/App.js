@@ -56,7 +56,7 @@ class App extends Component {
     const { bitList } = this.state;
     
     return (
-      <div className="App">
+      <section className="App">
         <Navbar />
         <div className="header">
           <h1 className="header-main">Shorten. Share. Measure.</h1>
@@ -79,7 +79,7 @@ class App extends Component {
             )}
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }
