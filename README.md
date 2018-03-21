@@ -10,7 +10,7 @@ Open the project folder traverse to the `config` folder through the 'src' folder
 
 Rename the `demo-secret-keys.js` file to `secret-keys.js`.
 
-Open the `secret-keys.js` file and edit the variables for login and apiKey with your information.
+Open the `secret-keys.js` file and edit the variables for login and API key with your information. If you do not have credentials, sign up for a Bitly account [here](https://bitly.com/). Then visit [this page](https://bitly.com/a/your_api_key) to get your API Key.
 
 Save and close file.
 
