@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -19,7 +20,11 @@ body {
 
 nav {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -31,14 +36,21 @@ nav img {
 .nav-list {
   height: 70px;
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 0 50px;
 }
 
 .nav-links {
   height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style: none;
   text-transform: uppercase;
@@ -67,15 +79,31 @@ nav img {
   background-image: url(../images/background-image.png);
   background-size: cover;
   background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: white;
 }
@@ -108,6 +136,14 @@ form input {
 
 form input:focus {
   border: 1.4px solid #ee6123;
+}
+
+form input::-webkit-input-placeholder {
+  color: #9b9b9b;
+}
+
+form input:-ms-input-placeholder {
+  color: #9b9b9b;
 }
 
 form input::placeholder {
@@ -148,6 +184,7 @@ form button:hover {
   position: absolute;
   top: -70px;
   left: 20%;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(68, 68, 68, 0.404);
   box-shadow: 1px 1px 3px 0px rgba(68, 68, 68, 0.404);
 }
 
@@ -167,15 +204,27 @@ form button:hover {
 
 .bit-link {
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 25px;
 }
 
 
 .title-lurl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   line-height: 25px;
 }
@@ -201,7 +250,11 @@ form button:hover {
 }
 
 .url-click {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 25px;
 }
@@ -221,13 +274,21 @@ form button:hover {
 }
 
 .global-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .global-click {
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   margin-right: 7px;
 }
@@ -249,9 +310,17 @@ form button:hover {
 
 .not-found {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 50px;
   background-color: #ee6123;
@@ -294,13 +363,16 @@ form button:hover {
 
 @media (max-width: 576px) {
   nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
- .nav-list {
-  width: 100%;
-  padding: 0 10px;
- }
+  .nav-list {
+    width: 100%;
+    padding: 0 10px;
+  }
 
   nav img {
     margin-left: 0;
