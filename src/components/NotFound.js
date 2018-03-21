@@ -5,7 +5,7 @@ const NotFound = () => (
   <div className="not-found">
     <div>
       <p>Something went wrong :(</p>
-      <p>Make sure you are on the correct route path</p>
+      <p>Make sure you are on the correct route</p>
     </div>
     <Link to={`/`}>Click here to go home</Link>
   </div>
