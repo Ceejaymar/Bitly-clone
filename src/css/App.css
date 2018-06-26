@@ -344,21 +344,21 @@ form button:hover {
 
 /* -----Media Queries---- */
 
+@media (max-width: 1000px) {
+  .nav-list {
+    width: 75%;
+  }
+  
+  .header {
+    padding: 0 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-list {
     width: 100%;
     padding: 0 10px;
-   }
-}
-
-@media (max-width: 1000px) {
-  .nav-list {
-    width: 75%;
-   }
-
-   .header {
-    padding: 0 30px;
-  }
+    }
 }
 
 @media (max-width: 576px) {
